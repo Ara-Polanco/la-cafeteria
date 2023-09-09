@@ -324,10 +324,13 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
+  background-color: #ebe7de;
 }
 
 p {
   color: #000000;
+  line-height: 2;
+  margin: 0;
 }
 
 .contenedor {
@@ -345,20 +348,10 @@ img {
   display: block;
 }
 
-h1, h2, h3 {
-  margin: 0 0 3rem 0;
-}
-
-h1 {
-  font-size: 4rem;
-}
-
-h2 {
-  font-size: 3.5rem;
-}
-
-h3 {
-  font-size: 3rem;
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 .text-center {
@@ -367,6 +360,42 @@ h3 {
 
 bg-primario {
   background-color: #5e311e;
+}
+
+h1, h2, h3 {
+  margin: 0 0 3rem 0;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+  color: #5e311e;
+}
+h2 span {
+  color: #c39c63;
+  font-size: 1.8rem;
+  display: block;
+}
+h2::after {
+  content: "";
+  display: block;
+  width: 10rem;
+  height: 10rem;
+  margin: 0 auto;
+  background-image: url("/build/img/cafe.svg");
+  background-repeat: no-repeat;
+  background-size: 10rem;
+}
+
+h3 {
+  font-size: 3rem;
 }
 
 .header {
@@ -472,5 +501,45 @@ bg-primario {
   .barra .logo {
     width: 20rem;
     margin: 0;
+  }
+}
+
+.contenido-principal {
+  background-color: #ffffff;
+  padding: 6rem 3rem;
+}
+@media (min-width: 768px) {
+  .contenido-principal {
+    padding: 9rem;
+    margin-top: -9rem;
+    position: relative;
+  }
+}
+
+.iconos {
+  margin-top: 3rem;
+}
+.iconos .listado-iconos li {
+  margin-bottom: 3rem;
+}
+.iconos .listado-iconos li img {
+  margin: 0 auto;
+  width: 13rem;
+}
+.iconos .listado-iconos li p {
+  font-family: "Bona Nova", serif;
+  font-size: 3.2rem;
+  color: #5e311e;
+}
+@media (min-width: 768px) {
+  .iconos .listado-iconos li {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 768px) {
+  .iconos .listado-iconos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
   }
 }
