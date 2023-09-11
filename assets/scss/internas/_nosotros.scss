@@ -4,14 +4,13 @@
 
 .contenido-nosotros {
 
-    @include m.tablet { 
+    @include m.desktop { 
         @include m.grid(2, 5rem);
     }
     .imagen {
         margin-bottom: 5rem;
-        
 
-        @include m.tablet { 
+        @include m.desktop { 
             margin-bottom: 0;
         }
         
