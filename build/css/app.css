@@ -356,18 +356,6 @@ ul {
   margin: 0;
 }
 
-.text-center {
-  text-align: center;
-}
-
-.bg-blanco {
-  background-color: #ffffff;
-}
-
-.m-negativo-10 {
-  margin-top: -10rem;
-}
-
 h1, h2, .heading-blanco, h3 {
   margin: 0 0 3rem 0;
   font-family: "Raleway", sans-serif;
@@ -476,6 +464,10 @@ h3 {
 
 .header-proceso {
   background-image: url("/build/img/header_nosotros.jpg");
+}
+
+.header-menu {
+  background-image: url("/build/img/header_menu.jpg");
 }
 
 .nav-principal {
@@ -821,4 +813,34 @@ h3 {
   max-width: 20rem;
   height: 5px;
   background-color: #c39c63;
+}
+
+@media (min-width: 1024px) {
+  .contenido-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+}
+.contenido-menu .texto p {
+  font-size: 2rem;
+}
+.contenido-menu .imagen {
+  margin-top: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-blanco {
+  background-color: #ffffff;
+}
+
+.m-negativo-10 {
+  margin-top: -10rem;
+}
+
+.padding-bottom-0 {
+  padding-bottom: 0;
 }
